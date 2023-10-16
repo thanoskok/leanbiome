@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClickBank</title>
+  <link rel="stylesheet" href="index.css"></link>
+</head>
+<body>
+  <div class="flex-cont">
+    <div class="section-1">
+        <div class="image-1-cont">
+          <img src="images/leanbiome-bottle.png" class="image-1">
+        </div>
+    </div>
+    <div class="section-2">
+      <div class="image-2-cont">
+        <img src="images/clickbank-image.png" class="image-2">
+      </div>
+  </div>
+    <div class="section-3">
+        <div class="image-3-cont">
+          <img src="images/leanbiome-bottle.png" class="image-3">
+        </div>
+    </div>
+  </div>
+  <div class="button-cont">
+    <button class="continue-but">CONTINUE</button>
+  </div>
+
+  <script>
+    const button = document.querySelector('.continue-but');
+  
+    button.addEventListener('click', function () {
+      const redirectUrl = 'https://02c2chvvom46ze8jszr5yj-0dh.hop.clickbank.net';
+  
+      window.location.href = redirectUrl;
+    });
+  </script>
+  
+</body>
+</html>

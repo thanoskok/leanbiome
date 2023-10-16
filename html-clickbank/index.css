@@ -1,0 +1,111 @@
+body {
+  background-color: rgb(45, 9, 9);
+  overflow-x: hidden;
+}
+
+.image-1-cont {
+  transform: rotate(-10deg)
+}
+
+.image-1, 
+.image-3 {
+  width: 90%;
+  margin-top: 50%;
+}
+
+.image-3-cont {
+  transform: rotate(10deg);
+}
+
+.image-2 {
+  width: 98%;
+  margin-bottom: -150px;
+}
+
+.flex-cont {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-1, .section-3 {
+  flex: 20%;
+}
+
+.section-2 {
+  flex: 60%;
+}
+
+.button-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.continue-but {
+  background-color: rgb(182, 31, 31);
+  font-size: 3vw;
+  color: white;
+  border-style: none;
+  border-radius: 3px;
+  padding: 20px 40px;
+  cursor: pointer;
+
+  animation: wiggle 0.6s infinite;
+  transform-origin: center;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(1deg);
+  }
+  50% {
+    transform: rotate(-1deg);
+  }
+  75% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
+
+@media screen and (max-width: 1000px) {
+  .image-1 {
+    display: none; /* Hide image-3 */
+  }
+  
+  .image-2 {
+    width: 95%;
+    margin: 0 auto; /* Center image-2 */
+  }
+
+  .flex-cont {
+    flex-direction: column; /* Stack sections vertically */
+    align-items: center; /* Center elements within the container */
+  }
+
+  .section-1, .section-2, .section-3 {
+    flex: 100%; /* Full width for each section */
+  }
+
+  .image-3-cont {
+    transform: none; /* Remove rotation */
+  }
+
+  .image-3 {
+    margin-top: -20%; /* Remove margin-top */
+    width: 35%;
+    margin-left: 33%;
+  }
+
+  .continue-but {
+    font-size: 5vw;
+    padding: 25px 50px;
+    margin-top: 15px;
+  }
+}
